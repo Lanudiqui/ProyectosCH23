@@ -1,0 +1,18 @@
+h1{
+    color: rgba(93, 130, 216,0.89);
+    font-size: 70px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p{
+    font-family: sans-serif;
+    color: rgb(107, 221, 123);
+}
+
+button{
+    background-color: orangered;
+    color: white;
+    border: 0;
+    padding: 20px;
+}

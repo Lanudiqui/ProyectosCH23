@@ -1,16 +1,16 @@
 body{
-    font-family: 'Open sans', arial, Tahoma;
-    font-weight: 400;
-    font-size: 12px;
+    font-family: 'Open sans', arial, Tahoma; /*La propiedad font-family define una lista de fuentes o familias de fuentes, con un orden de prioridad, para utilizar en un elemento seleccionado. A diferencia de la mayoría de las propiedades CSS, los valores se separan con comas (",") para indicar que son valores alternativos. */
+    font-weight: 400; /*especifica el peso o grueso de la letra. Algunos tipos de letra sólo están disponibles en normal y bold.*/
+    font-size: 12px; /*especifica la dimensión de la letra. Este tamaño puede, a su vez, alterar el aspecto de alguna otra cosa, ya que se usa para calcular la longitud de las unidades em y ex.*/
     color: rgb(67, 63, 63);
-    background: #FFFFFF;
+    background: rgb(179, 150, 238);
 }
 
 /*HEADER*/
 
 #photo-header{
     text-align: center;
-    border-bottom-color: brown;
+    border-bottom-color: brown; /*define el color del borde inferior de un elemento, con la ayuda de un valor de color o con la palabra clave transparent*/
     border-bottom-width: 5px;
     border-bottom-style: double;
    
@@ -36,7 +36,7 @@ h1 span{
 
 .container{
     max-width: 900px;
-    background: rgb(179, 150, 238);
+    background: #fdfdfd;
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
@@ -47,13 +47,13 @@ h1 span{
 .menu ul{
     text-align: center;
     margin: auto;padding: 0%;
-    list-style-type: none;
+    list-style-type: none; /*con esta propiedad quitamos los puntos de las listas desaordenadas*/
 
 
 }
 
 .menu ul li{
-    display: inline-block;
+    display: inline-block; /*establece los tipos de visualización interna y externa de un elemento. La tipo externa establece la participacion de un elemento en flow layout; la tipo interna establece el layout(Diseño) de los hijos.*/
     position: relative;
 }
 
@@ -61,8 +61,152 @@ h1 span{
     background: #000000;
     color: #FFFFFF;
     font-size: 10px;
-    text-decoration: none;
+    text-decoration: none; /*se usa para establecer el formato de texto a subrayado (underline) y suprarrayado (overline), tachado (line-through) o parpadeo (blink). El subrayado y el suprarrayado son posicionados bajo el texto, mientras la línea a través de éste se posiciona por encima.*/
     display: block;
-    padding: 3px;
+    padding: 5px;
+}
+/*La propiedad position de CSS especifica cómo un elemento es posicionado 
+en el documento. Las propiedades top, right, bottom, y left determinan 
+la ubicación final de los elementos posicionados.*/
+
+.menu ul li ul{
+    position: absolute; /* especifica cómo un elemento es posicionado en el documento. Las propiedades top, right, bottom, y left determinan la ubicación final de los elementos posicionados.*/
+    top: 25px;
+    left: 0;
+    list-style-type: none;
+    display: none;
+    height: auto;
 }
 
+.menu ul li:hover ul{
+    display: block;
+}
+
+.menu ul li ul li{
+    display: block;
+    width: 60px;
+    height: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+/*fin header*/
+
+h2{
+    color: rgb(218, 10, 7);
+    text-transform: uppercase;
+}
+
+h2::before{
+    content:  "  //  ";
+}
+
+.clearfix:before{
+    display: table;
+    line-height: 1;
+    content: "/";
+    
+}
+
+.pull-left{
+    float: left;
+    
+}
+
+.row{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-60{
+    width: 60%;   
+}
+
+.col-10{
+    width: 10%;
+}
+
+.col-80{
+    width: 80%;
+}
+
+.col-90{
+    width: 90%;
+}
+/********************************/
+.containerflex{
+    display: flex;
+}
+
+.education ul{
+    list-style: none;
+    margin:0;
+    padding: 0; 
+}
+    .education .year {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
+    .education .description {
+        background: #EEEEEE;
+        border-bottom: 1px solid #DDDDDD;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        box-sizing: border-box; 
+    }
+
+    .education .description h3, .education .description p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .education .description p::after {
+        content: "";
+        position: absolute;
+        border: 8px solid transparent ;
+        border-right: 8px solid #EEEEEE ;
+        top: 5px;
+        left: -16px;
+    }
+
+
+  .experience .job .where{
+    font-size: 1.2em;
+    font-weight: bold;
+  }  
+
+  .year{
+    font-size: 0.8em;
+  }
+  .profesion{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3em;
+    font-size: 0.9em;
+    text-align: justify;
+  }
+
+  .description{
+    margin-top: 0;
+    margin-left: 3em;
+    text-align: justify;
+
+  }
+
+  .containerskill{
+    width: 100%;
+    background-color: #ddd;
+  }
+
+  .skills{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+
+  .html {width: 30%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.python {width: 60%; background-color: #808080;}

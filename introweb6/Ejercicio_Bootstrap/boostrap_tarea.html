@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap tarea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script>
+        function miFuncion(){
+            document.write("¡Cambiar el nombre!")
+        }
+    </script>
+</head>
+<body>
+    <!--**********Ejercicio No.1**********-->
+    <h1>"Hola Nombre"</h1>
+    <script>
+        miFuncion()
+    </script>
+    <button onclick="evento()">Submit</button>
+    <hr>
+    <br>
+    <br>
+    <!--**********Ejercicio No.2**********-->
+    <!--Cards con Modal-->
+    <h1 style="text-align: center;">¡BALLENAS!</h1>
+    <div class="container-fluid">
+          <div class="card-group">
+            <div class="card">
+              <img src="https://www.si.edu/sites/default/files/newsdesk/press_releases/1.11.01_1684_gw_narwhal_tusk_topics.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Narval</h5>
+                <p class="card-text">Los narvales son ballenas medianas que miden entre 13 y 18 pies de largo, sin incluir el colmillo largo que se ve en la mayoría de los machos, cuya medida promedio es de aproximadamente 6 a 8 pies. Este colmillo distintivo no es un cuerno sino un diente largo y en espiral que perfora el labio superior. Los narvales solo viven cerca del Círculo Polar Ártico en las aguas heladas que abarcan el norte de Canadá, Groenlandia y Rusia, donde los cambios en el clima y el hielo marino representan un desafío cada vez mayor para su supervivencia.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      ¿Cuántos narvales hay en la actualidad?
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              Hay unos 75.000 individuos.
+                          </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">¡Sorprendente!</button>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+              <img src="ballena-beluga-122928.jpg" class="card-img-top" alt="..." height="329px">
+              <div class="card-body">
+                <h5 class="card-title">Belugas</h5>
+                <p class="card-text">La beluga (en ruso, Белуга) (Delphinapterus leucas) es una especie de cetáceo odontoceto que habita en la región ártica y subártica. Es la única especie del género Delphinapterus y junto al narval (Monodon monoceros) conforman la familia Monodontidae.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    ¿Sabías qué?
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          El nombre de beluga proviene de la palabra rusa byelukha, que significa blanco.
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                      </div>
+                </div>
+                </div>
+            </div>            
+            <div class="card">
+              <img src="./orca.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Orca</h5>
+                <p class="card-text">La orca (Orcinus orca) es una especie de cetáceo odontoceto perteneciente a la familia Delphinidae (delfines oceánicos), que habita en todos los océanos del planeta. Es la especie más grande de delfínido y la única existente actual reconocida dentro del género Orcinus. se puede localizar en España, en el mar Cantábrico</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  ¿Cuánto viven las orcas?
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Las hembras en estado silvestre viven en promedio de 50 a 80 años. De todas formas hay registros de orcas que vivieron hasta los 100 años. Un macho en estado silvestre vive en promedio 30 años, de todas formas algunos han alcanzado los 60 años de edad.
+                      </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">¡Sorprendente!</button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+        
+</body>
+
+</html>

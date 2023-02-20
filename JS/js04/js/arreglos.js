@@ -39,6 +39,18 @@ console.log(lista);
 //Método sort
 lista.sort(
     function(valor1,valor2){
-        return valor1 > valor2;
+        return valor1 - valor2; //no se utilizan booleanos si no regresa el mismo array, para la comparación se usa el signo de menos
+        //return(valor2-valor1); //Regresa de mayor a menor
+    }
+);
+
+console.log(lista)
+
+//Método map
+
+let lNueva = lista.map(
+    function(valor){
+
+        return valor * 2
     }
 )

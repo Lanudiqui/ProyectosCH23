@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!--Nodo del tipo documento-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora del Dom</title>
+</head>
+<body>
+    <h1 id="">Calculadora DOM</h1>
+    <!--Ingreso mis npumeros-->
+    <input type="number" id="input1" placeholder="Ingresa tu primer numero">
+
+    <input type="number" id="input2" placeholder="Ingresa tu segundo numero">
+
+    <br>
+    <br>
+    <!--Creo botones para las operaciones-->
+    <button onmouseover="cambiarColor('blue')" id="botonSuma" class="botones">Suma</button>
+    <button id="botonResta" class="botones">Resta</button>
+    <button id="botonMultiplicacion" class="botones">Multiplicación</button>
+    <button id="botonDivision" class="botones">División</button>
+
+    <!--Aquí va mi resultado-->
+    <p id="resultado">Aquí va el resultado</p>
+
+    <!--Aqui va la imagen-->
+    <script src="./js/script.js"></script>
+</body>
+</html>

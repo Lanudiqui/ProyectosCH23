@@ -36,13 +36,10 @@ Write while loops to do the following: */
 
 //– Repeatedly print the value of the variable xValue, decreasing it by 0.5 each time, as long as xValue remains positive.
 var xValue = parseFloat(prompt("Ingrese un número positivo: "));
-console.log(xValue);
-while(xValue==0.0){
-    xValue = xValue - 0.5;
-    console.log(xValue);
+for (let i = xValue; i >= 0; i-=0.5) {
+    console.log("Los valores son -> " + i);
+
 }
-console.log(xValue);
-console.log("****************************************");
 
 //Print all the odd numbers between 1 - 100.
 let numero = 0;

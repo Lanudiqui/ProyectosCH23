@@ -5,20 +5,63 @@ import java.util.*;
 public class MisColecciones {
 
 	public static void main(String[] args) {
-		
-		wrapperClass();
+		MisColecciones c = new MisColecciones();
+		//imprimir(c.listasCollection());
+		//imprimir(c.setCollection());
+		mapCollection();
+		//wrapperClass();
 	}
 	
-	static void listasCollection () {
+	private  static void mapCollection() {
+		Map miMap = new HashMap();
+		
+		miMap.put("Valor1", "Juan");
+		miMap.put("Valor2", "Maria");
+		miMap.put("Valor3", "Arturo");
+		miMap.put("Valor4", "Karla");
+		
+		miMap.remove("Valor3");
+		imprimir(miMap.keySet());
+		imprimir(miMap.values());
+	}
+	
+	Set setCollection() {
+		Set miSet = new HashSet();
+		miSet.add("uno");
+		miSet.add("dos");
+		miSet.add("tres");
+		miSet.add("cuatro");
+		miSet.add("cinco");
+		System.out.println("--> " + miSet.isEmpty());
+		System.out.println("--> " + miSet.iterator());
+		System.out.println("--> " + miSet.size());
+		return miSet;
+	}
+	
+	private List listasCollection () {
 		List miLista = new ArrayList();
+		System.out.println(miLista + " Tamaño de la lista antes " + miLista.size());
+		System.out.println("Esta vacia " + miLista.isEmpty());
 		miLista.add(1);
 		miLista.add(2);
 		miLista.add(3);
+		miLista.add(0,"pato");
+		
+		miLista.set(0, miLista);
+		miLista.remove(0);
+		
+		System.out.println(miLista + " Tamaño de la lista despues " + miLista.size());
+		System.out.println("Esta vacia " + miLista.isEmpty());
+		
+		boolean e = miLista.contains("pato");
+		System.out.println("---> " + e);
+		
+		return miLista;
 	}
 	
-	public void imprimir (Collection collection) {
-		for (Objet element : Collection) {
-			
+	public static  void imprimir (Collection collection) {
+		for (Object element : collection) {
+			System.out.println("Elementos " + element);
 		}
 	}
 	

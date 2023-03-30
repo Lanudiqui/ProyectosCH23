@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\CH23\JAVA-WEB\jw-01-browser\demo01\anotaciones\.metadata\.plugins\org.eclipse.jdt.core
